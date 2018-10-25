@@ -148,8 +148,8 @@ describe('User can request a new password', function() {
 ```
 @[4,24](Standard mocha test structure.)
 @[5,9, 13, 17, 21, 25](Gherkin style verbose step descriptors)
-@[10,14,18,22](Standard model interaction pattern)
-+++?color=black
+@[1,2,10,14,18,22](Standard model interaction pattern)
++++
 @snap[north-east template-note text-gray]
 An example of a model object
 @snapend
