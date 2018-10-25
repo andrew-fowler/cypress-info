@@ -9,9 +9,15 @@ Cypress.io<br>*An overview*
 
 ## What is it?
 
+Javascript based test framework
+
 ---
 
 ## Why are we using it?
+
+Large test suites caused extremely large run times, which, coupled with a lack of testing in pipeline have resulted in the tests not being ran, which has resulted in escapes.
+
+In adopting Cypress we hope to increase the likelihood that tests will be executed and regressions caught, pre-merge.
 
 ---
 
@@ -39,7 +45,7 @@ Cypress.io<br>*An overview*
 
 +++
 
-- Doesn't support parallelization (unless you pay, and even then only in CI)
+- Doesn't support parallelization (unless you pay, and then only in CI)
   - But its primarily a local tool, so that's not a huge loss
 
 +++
@@ -48,7 +54,15 @@ Cypress.io<br>*An overview*
 
 +++
 
+- Javascript only
+
++++
+
 - Doesn't support async/await
+
++++
+
+- Forces mocha usage
 
 +++
 
@@ -79,23 +93,59 @@ myElement1.invoke('text').then((text1) => {
 
 +++
 
-- Harness take DOM snapshots of each step
+- The Cypress harness takes DOM snapshots at each step of a test
   - Handy for debugging
 
 +++
 
-- Can access the console (local only, not in CI)
-  - Handy for debugging & asserting lack of js errors
+- You can access the console from code, and manually (local only, not in CI)
+  - Handy for debugging & asserting on console state
+
++++
+
+- It's quicker than standalone & sequential webdriver
 
 ---
 
 ## Code
 
-what a test looks like
++++
+```javascript
+let indexPage = require('../model/index.page');
+let forgottenPasswordPage = require('../model/forgottenPassword.page.js');
 
-what a model object looks like
+describe('User can request a new password', function() {
+  it('Given the user loads the landing page', function() {
+    cy.visit('/');
+  })
+ 
+  it('And goes to the Forgotten Password page', function() {
+      indexPage.forgottenPasswordLink().click();
+  })
 
-what assertions look like
+  it('And they specify an email address', function() {
+      forgottenPasswordPage.emailInput().type("foo@bar.com");
+  })
+
+  it('When they submit the request', function(){
+      forgottenPasswordPage.submitButton().click();
+  })
+
+  it('Then the success message is displayed', function(){
+      forgottenPasswordPage.successMessage().should('be.visible');
+  })
+})
+```
++++
+```javascript
+var forgottenPasswordPage = {
+    emailInput: function(){return cy.get('#email')},
+    submitButton: function(){return cy.get('#form_submit')},
+    successMessage: function(){return cy.contains(`Your e-mail's been sent!`)}
+}
+
+module.exports = forgottenPasswordPage;
+```
 
 ---
 
