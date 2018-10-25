@@ -139,6 +139,8 @@ element.click()
 ```
 Unlike all the automation code you've ever written, in Cypress, this does _not_ click the element.  It records your _intent_ to click the element, which actually happens later.
 
++++
+
 Which means you can't, for example, do this
 
 ```javascript
