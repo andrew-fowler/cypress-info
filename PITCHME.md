@@ -144,7 +144,7 @@ module.exports = forgottenPasswordPage;
 ```
 +++
 
-@snap[west split-screen-heading text-orange span-50]
+@snap[west split-screen-heading text-orange span-30]
 ```
 element.click()
 ```
