@@ -166,7 +166,7 @@ expect(myElement1.text).not.to.eq(myElement2.text)
 
 +++
 
-if you want to branch on a value (e.g. compare two values, work with arrays, etc), you have to do something like this
+If you want to branch based on the result of a query, you have to do something like this...
 
 +++
 
@@ -186,7 +186,7 @@ expect(myPage.assertions()[1].text()).to.equal('More text from second p');
 expect(myPage.assertions()[2].text()).to.equal('And even more text from third p');
 ```
 +++
-you have something like
+You have something like
 
 ```javascript
 cy.get('.-p').find('p')
