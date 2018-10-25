@@ -97,6 +97,9 @@ In adopting Cypress we hope to increase the likelihood that tests will be execut
 ## Code
 
 +++
+@snap[north-east template-note text-gray]
+An example of a test
+@snapend
 ```javascript
 let indexPage = require('../model/index.page');
 let forgottenPasswordPage = require('../model/forgottenPassword.page.js');
@@ -124,6 +127,9 @@ describe('User can request a new password', function() {
 })
 ```
 +++
+@snap[north-east template-note text-gray]
+An example of a model object
+@snapend
 ```javascript
 var forgottenPasswordPage = {
     emailInput: function(){return cy.get('#email')},
