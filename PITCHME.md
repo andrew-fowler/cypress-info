@@ -28,7 +28,7 @@ Cypress tests should be
 - small
 - isolated
 - component based
-- supported by high level wdio tests for x-browser coverage
+- supported by high level, parallelized, CI-based wdio tests for x-browser coverage
 
 ---
 
@@ -51,22 +51,22 @@ In adopting Cypress we hope to increase the likelihood that tests will be execut
 +++
 
 - Doesn't support Firefox / IE / Edge / Safari
-  - But we can still use wdio/sauce for x-browser
+  <!--- But we can still use wdio/sauce for x-browser-->
 
 +++
 
 - Doesn't support iframes / tabs / windows
-  - Any existing tests needing tabs (e.g. SSO/IDP tests) won't work
+  <!--- Any existing tests needing tabs (e.g. SSO/IDP tests) won't work-->
 
 +++
 
 - Doesn't support xpath
-  - So existing xpaths will need to be converted to css selectors or similar, may require markup modification for unlocatable elements
+  <!--- So existing xpaths will need to be converted to css selectors or similar, may require markup modification for unlocatable elements-->
 
 +++
 
 - Doesn't support parallelization 
-  - Which means execution costs are linearly proportional to test count, which limits scalability
+  <!--- Which means execution costs are linearly proportional to test count, which limits scalability-->
 
 +++
 
@@ -96,17 +96,17 @@ In adopting Cypress we hope to increase the likelihood that tests will be execut
 +++
 
 - Tests run on a watch
-  - Handy for quick feedback
+  <!--- Handy for quick feedback-->
 
 +++
 
 - The Cypress harness takes DOM snapshots at each step of a test
-  - Handy for debugging
+  <!--- Handy for debugging-->
 
 +++
 
 - You can access the console from code, and manually (local only, not in CI)
-  - Handy for debugging & asserting on console state
+  <!--- Handy for debugging & asserting on console state-->
 
 +++
 
