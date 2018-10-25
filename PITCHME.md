@@ -162,6 +162,27 @@ var forgottenPasswordPage = {
 
 module.exports = forgottenPasswordPage;
 ```
++++
+@snap[north-east template-note text-gray]
+A pretty standard hooks implementation
+@snapend
+```javascript
+before(function() {
+// runs once before all tests in the block
+})
+
+after(function() {
+// runs once after all tests in the block
+})
+
+beforeEach(function() {
+// runs before each test in the block
+})
+
+afterEach(function() {
+// runs after each test in the block
+})
+```
 +++?image=template/img/bg/orange.jpg&position=right&size=50% 100%
 
 @snap[west split-screen-heading text-orange span-20]
