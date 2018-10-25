@@ -156,7 +156,7 @@ Unlike all the automation code you've ever written, in Cypress, this does _not_ 
 ```
 element.click()
 ```
-Unlike all the automation code you've ever written, in Cypress, this does _not_ click the element.  
+Unlike most automation code you've ever written, in Cypress, this does _not_ click the element.  
 <br><br>
 It records your _intent_ to click the element, which actually happens later.
 
