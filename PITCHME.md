@@ -15,11 +15,27 @@ Cypress.io<br>*An overview*
 
 ---
 
+## How does it fit into our testing strategy
+
++++
+
+Cypress tests should be
+
+- small
+- isolated
+- component based
+
+---
+
 ## Why are we using it?
 
 +++
 
-Large test suites have caused extremely large run times, which, coupled with a lack of testing in pipeline have resulted in the tests not being ran, which has resulted in escapes.
+Large test counts = Long run times
+Long run times = Tests aren't ran
+Tests aren't ran = Regression escapes
+
++++
 
 In adopting Cypress we hope to increase the likelihood that tests will be executed and regressions caught, pre-merge.
 
