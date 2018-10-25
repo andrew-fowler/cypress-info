@@ -96,7 +96,7 @@ In adopting Cypress we hope to increase the likelihood that tests will be execut
 
 ## Code
 
-+++
++++?color=black
 @snap[north-east template-note text-gray]
 An example of a test
 @snapend
