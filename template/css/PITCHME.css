@@ -77,7 +77,7 @@
 
 /** Code-Presenting Template Styles ***/
 
-.reveal pre { width: 100%; }
+.reveal pre { width: 100%; font-size: 0.7em;}
 
 /** Header-Footer Template Styles ***/
 
