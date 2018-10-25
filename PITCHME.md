@@ -158,11 +158,17 @@ It records your _intent_ to click the element, which actually happens later.
 
 Which means you can't, for example, do this
 
++++
+
 ```javascript
 expect(myElement1.text).not.to.eq(myElement2.text)
 ```
 
++++
+
 if you want to branch on a value (e.g. compare two values, work with arrays, etc), you have to do something like this
+
++++
 
 ```javascript
 myElement1.invoke('text').then((text1) => {
