@@ -175,20 +175,19 @@ It records your _intent_ to click the element, which actually happens later.
 @snapend
 
 +++
-
+@snap[north-east template-note text-gray]
 Which means you can't, for example, do this
-
-+++
+@snapend
 
 ```javascript
 expect(myElement1.text).not.to.eq(myElement2.text)
 ```
 
 +++
-
+@snap[north-east template-note text-gray]
 If you want to branch based on the result of a query, you have to do something like this...
+@snapend
 
-+++
 
 ```javascript
 myElement1.invoke('text').then((text1) => {
@@ -200,10 +199,10 @@ myElement1.invoke('text').then((text1) => {
 +++
 Similarly, instead of
 ```javascript
-expect(myPage.assertions().to.have.lengthOf(3));
-expect(myPage.assertions()[0].text()).to.equal('Some text from first p');
-expect(myPage.assertions()[1].text()).to.equal('More text from second p');
-expect(myPage.assertions()[2].text()).to.equal('And even more text from third p');
+expect(myPage.paragraphs().to.have.lengthOf(3));
+expect(myPage.paragraphs()[0].text()).to.equal('Some text from first p');
+expect(myPage.paragraphs()[1].text()).to.equal('More text from second p');
+expect(myPage.paragraphs()[2].text()).to.equal('And even more text from third p');
 ```
 +++
 You have something like
