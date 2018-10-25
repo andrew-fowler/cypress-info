@@ -36,8 +36,8 @@ Cypress tests should be
 
 +++
 
-Large test counts = Long run times
-Long run times = Tests aren't ran
+Large test counts = Long run times <br>
+Long run times = Tests aren't ran <br>
 Tests aren't ran = Regression escapes
 
 +++
