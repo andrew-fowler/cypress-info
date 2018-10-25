@@ -11,7 +11,9 @@ Cypress.io<br>*An overview*
 
 +++
 
-(mostly) Open source, javascript based test framework.
+Cypress is a (monstly) open source, javascript based test framework.
+Uses a local web based test harness
+Based on an injected js proxy, similar to Selenium 1
 
 ---
 
@@ -24,6 +26,7 @@ Cypress tests should be
 - small
 - isolated
 - component based
+- supported by high level wdio tests for x-browser coverage
 
 ---
 
@@ -37,7 +40,7 @@ Tests aren't ran = Regression escapes
 
 +++
 
-In adopting Cypress we hope to increase the likelihood that tests will be executed and regressions caught, pre-merge.
+In adopting Cypress we hope to increase the likelihood that tests will be executed and increase the likelihood that regressions are caught, quickly and pre-merge.
 
 ---
 
