@@ -9,13 +9,17 @@ Cypress.io<br>*An overview*
 
 ## What is it?
 
++++
+
 Javascript based test framework
 
 ---
 
 ## Why are we using it?
 
-Large test suites caused extremely large run times, which, coupled with a lack of testing in pipeline have resulted in the tests not being ran, which has resulted in escapes.
++++
+
+Large test suites have caused extremely large run times, which, coupled with a lack of testing in pipeline have resulted in the tests not being ran, which has resulted in escapes.
 
 In adopting Cypress we hope to increase the likelihood that tests will be executed and regressions caught, pre-merge.
 
