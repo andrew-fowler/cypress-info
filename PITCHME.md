@@ -11,9 +11,11 @@ Cypress.io<br>*An overview*
 
 +++
 
-Cypress is a (monstly) open source, javascript based test framework.
-Uses a local web based test harness
-Based on an injected js proxy, similar to Selenium 1
+Cypress is
+- a (mostly) open source
+- javascript based test framework.
+- using a local web based test harness
+- based on an injected js proxy, similar to Selenium 1
 
 ---
 
