@@ -145,7 +145,7 @@ module.exports = forgottenPasswordPage;
 +++?image=template/img/bg/orange.jpg&position=right&size=50% 100%
 
 @snap[west split-screen-heading text-orange span-20]
-`element.click()`
+element.click()
 @snapend
 
 @snap[east text-white span-45]
