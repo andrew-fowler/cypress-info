@@ -126,7 +126,7 @@ describe('User can request a new password', function() {
   })
 })
 ```
-+++
++++?color=black
 @snap[north-east template-note text-gray]
 An example of a model object
 @snapend
