@@ -53,11 +53,11 @@ Cypress.io<br>*An overview*
 +++
 
 - Code for working with values, is... funky.  E.g. Instead of
-```
+```javascript
 expect(myElement1.text).not.to.eq(myElement2.text)
 ```
  you have
-```
+```javascript
 myElement1.invoke('text').then((text1) => {
   myElement2.invoke('text').should((text2) => {
     expect(text1).not.to.eq(text2)
