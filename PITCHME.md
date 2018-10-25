@@ -11,7 +11,7 @@ Cypress.io<br>*An overview*
 
 +++
 
-Javascript based test framework
+(mostly) Open source, javascript based test framework.
 
 ---
 
