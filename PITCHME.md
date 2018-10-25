@@ -155,14 +155,6 @@ It records your _intent_ to click the element, which actually happens later.
 @snapend
 
 +++
-```
-element.click()
-```
-Unlike most automation code you've written, in Cypress, this does _not_ click the element.  
-<br>
-It records your _intent_ to click the element, which actually happens later.
-
-+++
 
 Which means you can't, for example, do this
 
