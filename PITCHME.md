@@ -126,6 +126,8 @@ describe('User can request a new password', function() {
   })
 })
 ```
+@[1,2](You can present code inlined within your slide markdown too.)
+@[3,4](You can present code inlined within your slide markdown too.)
 +++?color=black
 @snap[north-east template-note text-gray]
 An example of a model object
