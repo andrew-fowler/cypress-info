@@ -142,7 +142,7 @@ var forgottenPasswordPage = {
 
 module.exports = forgottenPasswordPage;
 ```
-+++
++++?image=template/img/bg/orange.jpg&position=right&size=50% 100%
 
 @snap[west split-screen-heading text-orange span-30]
 ```
@@ -150,7 +150,7 @@ element.click()
 ```
 @snapend
 
-@snap[east text-black span-45]
+@snap[east text-white span-45]
 Unlike all the automation code you've ever written, in Cypress, this does _not_ click the element.  It records your _intent_ to click the element, which actually happens later.
 @snapend
 
