@@ -77,6 +77,8 @@
 
 /** Code-Presenting Template Styles ***/
 
+.reveal pre { width: 100%; }
+
 /** Header-Footer Template Styles ***/
 
 .header-footer-list-shrink li {

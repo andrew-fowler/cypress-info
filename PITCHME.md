@@ -60,18 +60,13 @@ In adopting Cypress we hope to increase the likelihood that tests will be execut
 
 +++
 
-- Doesn't support GRID architecture / Saucelabs
-  - Isn't really a huge deal, except for parallelization loss
-
-+++
-
 - Doesn't support xpath
   - So existing xpaths will need to be converted to css selectors or similar, may require markup modification for unlocatable elements
 
 +++
 
-- Doesn't support parallelization (unless you pay, and then only in CI)
-  - But its primarily a local tool, so that's not a huge loss
+- Doesn't support parallelization 
+  - Which means execution costs are linearly proportional to test count, which limits scalability
 
 +++
 
