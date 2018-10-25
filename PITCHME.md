@@ -197,7 +197,9 @@ myElement1.invoke('text').then((text1) => {
 })
 ```
 +++
-Similarly, instead of
+@snap[north-east template-note text-gray]
+Similarly, instead of...
+@snapend
 ```javascript
 expect(myPage.paragraphs().to.have.lengthOf(3));
 expect(myPage.paragraphs()[0].text()).to.equal('Some text from first p');
@@ -205,8 +207,9 @@ expect(myPage.paragraphs()[1].text()).to.equal('More text from second p');
 expect(myPage.paragraphs()[2].text()).to.equal('And even more text from third p');
 ```
 +++
-You have something like
-
+@snap[north-east template-note text-gray]
+You have something like...
+@snapend
 ```javascript
 cy.get('.-p').find('p')
 .should(($p) => {
