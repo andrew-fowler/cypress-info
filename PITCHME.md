@@ -66,21 +66,8 @@ In adopting Cypress we hope to increase the likelihood that tests will be execut
 
 +++
 
-- Code for working with values, is... funky.  E.g. Instead of
+- Cypress code doesn't work like you think it does
 
-```javascript
-expect(myElement1.text).not.to.eq(myElement2.text)
-```
-
-you have
-
-```javascript
-myElement1.invoke('text').then((text1) => {
-  myElement2.invoke('text').should((text2) => {
-    expect(text1).not.to.eq(text2)
-  })
-})
-```
 
 ---
 
@@ -146,7 +133,53 @@ var forgottenPasswordPage = {
 
 module.exports = forgottenPasswordPage;
 ```
++++
+```
+element.click()
+```
+Unlike all the automation code you've ever written, in Cypress, this does _not_ click the element.  It records your _intent_ to click the element, which actually happens later.
 
+Which means you can't, for example, do this
+
+```javascript
+expect(myElement1.text).not.to.eq(myElement2.text)
+```
+
+if you want to branch on a value (e.g. compare two values, work with arrays, etc), you have to do something like this
+
+```javascript
+myElement1.invoke('text').then((text1) => {
+  myElement2.invoke('text').should((text2) => {
+    expect(text1).not.to.eq(text2)
+  })
+})
+```
++++
+Similarly, instead of
+```javascript
+expect(myPage.assertions().to.have.lengthOf(3));
+expect(myPage.assertions()[0].text()).to.equal('Some text from first p');
+expect(myPage.assertions()[1].text()).to.equal('More text from second p');
+expect(myPage.assertions()[2].text()).to.equal('And even more text from third p');
+```
++++
+you have something like
+
+```javascript
+cy.get('.-p').find('p')
+.should(($p) => {
+  let texts = $p.map((i, el) =>
+    Cypress.$(el).text())
+
+  texts = texts.get()
+  expect(texts).to.have.length(3)
+  expect(texts).to.deep.eq([
+    'Some text from first p',
+    'More text from second p',
+    'And even more text from third p',
+  ])
+})
+```
 ---
 
 ### Demo
