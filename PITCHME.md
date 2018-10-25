@@ -150,7 +150,7 @@ element.click()
 ```
 @snapend
 
-@snap[east text-white span-45]
+@snap[east text-black span-45]
 Unlike all the automation code you've ever written, in Cypress, this does _not_ click the element.  It records your _intent_ to click the element, which actually happens later.
 @snapend
 
