@@ -1,4 +1,4 @@
----?color=linear-gradient(to right, #0750c4, #f4ab4b)
+---
 @title[Cypress.io]
 
 @snap[west headline text-white span-70]
@@ -61,12 +61,16 @@ In adopting Cypress we hope to increase the likelihood that tests will be execut
 +++
 
 - Doesn't support xpath
-  <!--- So existing xpaths will need to be converted to css selectors or similar, may require markup modification for unlocatable elements-->
+  <!--- 
+   So existing xpaths will need to be converted to css selectors or similar, may require markup modification for unlocatable elements.
+  -->
 
 +++
 
 - Doesn't support parallelization 
-  <!--- Which means execution costs are linearly proportional to test count, which limits scalability-->
+  <!--- 
+   Which means execution costs are linearly proportional to test count, which limits scalability.
+  -->
 
 +++
 
