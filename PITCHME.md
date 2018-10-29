@@ -2,7 +2,7 @@
 @title[Cypress.io]
 
 @snap[west headline text-white span-70]
-Cypress.io<br>*An overview*
+Cypress.io<br>*Overview*
 @snapend
 
 ---
