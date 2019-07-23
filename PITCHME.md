@@ -57,15 +57,6 @@ In adopting Cypress we hope to increase the likelihood that tests will be execut
 - Doesn't support iframes / tabs / windows
   <!--- Any existing tests needing tabs (e.g. SSO/IDP tests) won't work-->
 
-<!---
-+++
-
-- Doesn't support xpath
--->
-  <!--- 
-   So existing xpaths will need to be converted to css selectors or similar, may require markup modification for unlocatable elements.
-  -->
-
 +++
 
 - Doesn't support parallelization* 
