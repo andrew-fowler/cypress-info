@@ -64,11 +64,6 @@ In adopting Cypress we hope to increase the likelihood that tests will be execut
    Which means execution costs are linearly proportional to test count, which limits scalability.
   -->
 
-<!--
-+++
-
-- Doesn't support categorisation-by-config
--->
 +++
 
 - Javascript only
