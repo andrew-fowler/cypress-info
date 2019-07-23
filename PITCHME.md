@@ -27,8 +27,7 @@ Cypress tests should be
 
 - small
 - isolated
-- component based
-- supported by high level, parallelized, CI-based wdio tests for x-browser coverage
+- supported by high level, parallelized, CI-based x-browser coverage tests
 
 ---
 
@@ -72,10 +71,11 @@ In adopting Cypress we hope to increase the likelihood that tests will be execut
    Which means execution costs are linearly proportional to test count, which limits scalability.
   -->
 
+<!--
 +++
 
 - Doesn't support categorisation-by-config
-
+-->
 +++
 
 - Javascript only
@@ -90,7 +90,7 @@ In adopting Cypress we hope to increase the likelihood that tests will be execut
 
 +++
 
-- Cypress code doesn't work like you think it does
+- Cypress code doesn't work like you'd think it does
 
 
 ---
@@ -99,13 +99,12 @@ In adopting Cypress we hope to increase the likelihood that tests will be execut
 
 +++
 
-- Tests run on a watch
-  <!--- Handy for quick feedback-->
+- It's quicker than standalone & sequential webdriver
 
 +++
 
-- Comes with a strong test harness app for local execution
-  <!--- Handy for debugging-->
+- Tests run on a watch
+  <!--- Handy for quick feedback-->
 
 +++
 
@@ -114,7 +113,8 @@ In adopting Cypress we hope to increase the likelihood that tests will be execut
 
 +++
 
-- It's quicker than standalone & sequential webdriver
+- Comes with a strong test harness app for local execution and debugging
+  <!--- Handy for debugging-->
 
 ---
 
