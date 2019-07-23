@@ -104,7 +104,7 @@ In adopting Cypress we hope to increase the likelihood that tests will be execut
 
 +++
 
-- The Cypress harness takes DOM snapshots at each step of a test
+- Comes with a strong test harness app for local execution
   <!--- Handy for debugging-->
 
 +++
